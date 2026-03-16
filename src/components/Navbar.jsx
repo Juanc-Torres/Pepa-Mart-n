@@ -3,7 +3,6 @@ import { useState } from "react"
 import { FaBars, FaTimes } from "react-icons/fa"
 
 function Navbar() {
-
   const [menuOpen, setMenuOpen] = useState(false)
 
   const toggleMenu = () => {
@@ -12,7 +11,6 @@ function Navbar() {
 
   return (
     <header className="navbar">
-
       <h1 className="navbar__brand">
         <Link to="/">Pepa Martín</Link>
       </h1>
@@ -22,7 +20,6 @@ function Navbar() {
       </button>
 
       <nav className={`navbar__menu ${menuOpen ? "active" : ""}`}>
-
         <Link className="navbar__link" to="/" onClick={() => setMenuOpen(false)}>
           Fashion
         </Link>
@@ -34,9 +31,7 @@ function Navbar() {
         <Link className="navbar__link" to="/about" onClick={() => setMenuOpen(false)}>
           About
         </Link>
-
       </nav>
-
     </header>
   )
 }
