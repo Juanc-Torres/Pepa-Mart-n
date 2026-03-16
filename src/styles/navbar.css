@@ -20,11 +20,11 @@
 /* ================================= */
 
 .navbar__brand{
-  font-family:"Futura", "Trebuchet MS", Arial, sans-serif;
-  font-size:46px;
+  font-family: "Avenir", "Avenir Next", sans-serif;
+  font-size:43px;
   font-weight:400;
-  letter-spacing:0.04em;
   line-height:1;
+  
 }
 
 .navbar__brand a{

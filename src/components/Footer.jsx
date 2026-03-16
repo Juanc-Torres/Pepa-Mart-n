@@ -30,7 +30,7 @@ function Footer() {
         </a>
       </div>
 
-      <p className="footer__text">© Bypepamartin</p>
+      <p className="footer__text">© Pepa Martín, All rights reserved</p>
     </footer>
   )
 }

@@ -28,11 +28,11 @@
 /* COLUMNA IMAGEN ABOUT              */
 /* ================================= */
 
-.about__image img{
-  width:100%;
-  max-width:500px;
-  height:650px;
-  object-fit:cover;
+.about__image img {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  object-fit: contain;
 }
 
 /* ================================= */
