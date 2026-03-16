@@ -1,0 +1,39 @@
+/* ================================= */
+/* FOOTER                            */
+/* ================================= */
+
+.footer{
+  padding:40px;
+  text-align:center;
+  color:#777;
+}
+
+/* ================================= */
+/* ICONOS REDES FOOTER               */
+/* ================================= */
+
+.footer__social{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:24px;
+  font-size:24px;
+  margin-bottom:16px;
+}
+
+.footer__social a{
+  transition:opacity .25s ease, transform .25s ease;
+}
+
+.footer__social a:hover{
+  opacity:.7;
+  transform:translateY(-2px);
+}
+
+/* ================================= */
+/* TEXTO FOOTER                      */
+/* ================================= */
+
+.footer__text{
+  font-size:14px;
+}

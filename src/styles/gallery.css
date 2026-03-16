@@ -1,0 +1,58 @@
+/* ================================= */
+/* GALERIA JUSTIFIED                 */
+/* ================================= */
+
+.gallery{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:67px;
+  padding:40px 100px;
+}
+
+/* ================================= */
+/* CONTENEDOR DE IMAGEN              */
+/* ================================= */
+
+.gallery img{
+  height:400px;
+  width:auto;
+  object-fit:cover;
+  cursor:pointer;
+  transition:transform .35s ease, opacity .35s ease;
+}
+
+
+/* ================================= */
+/* HOVER                             */
+/* ================================= */
+
+.gallery img:hover{
+  transform:scale(1.03);
+  opacity:.9;
+}
+
+
+/* ================================= */
+/* RESPONSIVE                        */
+/* ================================= */
+
+@media (max-width:1200px){
+
+  .gallery img{
+    height:220px;
+  }
+
+}
+
+@media (max-width:700px){
+
+  .gallery{
+    padding:30px 30px;
+  }
+
+  .gallery img{
+    height:180px;
+  }
+
+}
