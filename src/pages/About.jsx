@@ -1,4 +1,3 @@
-import { FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa"
 import aboutImage from "../assets/profileimage/pepa-about.jpg"
 
 function About() {
