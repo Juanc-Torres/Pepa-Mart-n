@@ -15,7 +15,6 @@
 /* ================================= */
 /* CONTENEDOR CENTRAL                */
 /* ================================= */
-
 .lightbox__content{
   position:relative;
   width:100%;
@@ -25,11 +24,9 @@
   justify-content:center;
 }
 
-
 /* ================================= */
 /* IMAGEN / VIDEO CENTRADO           */
 /* ================================= */
-
 .lightbox__image-wrapper{
   position:relative;
   z-index:200;
@@ -45,7 +42,6 @@
   object-fit:contain;
   animation:zoomIn .25s ease;
 }
-
 
 /* ================================= */
 /* ZONAS CLICABLES                   */
@@ -67,11 +63,9 @@
   right:0;
 }
 
-
 /* ================================= */
 /* BOTONES LIGHTBOX                  */
 /* ================================= */
-
 .lightbox button{
   position:absolute;
   background:none;
@@ -81,53 +75,78 @@
   cursor:pointer;
   transition:opacity .2s ease;
   z-index:300;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.lightbox button:hover{
-  opacity:.6;
+@media (hover: hover){
+  .lightbox button:hover{
+    opacity:.6;
+  }
 }
-
-.lightbox button:hover{
-  opacity:.11;
-}
-
 
 /* ================================= */
 /* BOTON CERRAR                      */
 /* ================================= */
-
 .close{
   top:25px;
   right:40px;
 }
 
-
 /* ================================= */
 /* BOTON IZQUIERDA                   */
 /* ================================= */
-
 .prev{
   left:40px;
   top:50%;
   transform:translateY(-50%);
 }
 
-
 /* ================================= */
 /* BOTON DERECHA                     */
 /* ================================= */
-
 .next{
   right:40px;
   top:50%;
   transform:translateY(-50%);
 }
 
+/* ================================= */
+/* MOVIL                             */
+/* ================================= */
+@media (max-width: 768px){
+  .lightbox__image-wrapper{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .lightbox__image-wrapper img,
+  .lightbox__image-wrapper video{
+    max-width:90vw;
+    max-height:70vh;
+    object-fit:contain;
+  }
+
+  .prev,
+  .next{
+    top:auto;
+    bottom:30px;
+    transform:none;
+  }
+
+  .prev{
+    left:60px;
+  }
+
+  .next{
+    right:60px;
+  }
+}
 
 /* ================================= */
 /* ANIMACIONES                       */
 /* ================================= */
-
 @keyframes fadeIn{
   from{
     opacity:0;
