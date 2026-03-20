@@ -92,7 +92,7 @@
 /* RESPONSIVE NAVBAR                 */
 /* ================================= */
 
-@media (max-width:900px){
+@media (max-width:1200px){
 
   .navbar{
     padding:24px 40px;

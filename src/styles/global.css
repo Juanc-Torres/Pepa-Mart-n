@@ -44,3 +44,26 @@ img{
 .app__main{
   flex:1;
 }
+
+.page-loader{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:white;
+}
+
+.page-loader__spinner{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  border:3px solid #d9d9d9;
+  border-top-color:black;
+  animation:spin .8s linear infinite;
+}
+
+@keyframes spin{
+  to{
+    transform:rotate(360deg);
+  }
+}
